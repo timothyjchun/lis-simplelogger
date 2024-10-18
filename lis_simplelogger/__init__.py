@@ -1,1 +1,1 @@
-from .lis_simplelogger import LISSimpleLogger
+from .lis_simplelogger import *
