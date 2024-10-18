@@ -35,3 +35,11 @@ console_logger.warning('This is a warning message')
 console_logger.error('This is an error message')
 console_logger.critical('This is a critical message')
 ```
+
+you can also use a comprehensive functions to log to both the file and the console.
+```python
+LIS_SL.info_log(msg)
+LIS_SL.warning_log(msg)
+LIS_SL.error_log(msg)
+LIS_SL.critical_log(msg)
+```
