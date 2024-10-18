@@ -30,7 +30,6 @@ class LISSimpleLogger:
     '''
     
 
-    # logger (handler (formatter))
     def setup_file_logger(self):
         self.file_logger = logging.getLogger(f'{self.logger_name}_file_logger')
         self.file_logger.setLevel(logging.DEBUG)
@@ -53,18 +52,3 @@ class LISSimpleLogger:
     
     def get_console_logger(self):
         return self.console_logger
-
-
-if __name__ == "__main__":
-    FILEPATH = "./"
-    sl = LISSimpleLogger(
-        log_file=f"{FILEPATH}/file.log",
-        logger_name="pentra_logger"
-    )
-    sl.full_setup()
-    logger = sl.get_file_logger()
-    logger.debug('This is a debug message')
-    logger.info('This is an informational message')
-    logger.warning('This is a warning message')
-    logger.error('This is an error message')
-    logger.critical('This is a critical message')

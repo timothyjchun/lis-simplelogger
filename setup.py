@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lis-simplelogger',        
-    version='0.1',                   
+    version='0.1.2',                   
     packages=find_packages(),        
     description='Simple Logger for LIS.',
     long_description=open('README.md').read(),
