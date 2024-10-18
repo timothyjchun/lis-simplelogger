@@ -52,3 +52,19 @@ class LISSimpleLogger:
     
     def get_console_logger(self):
         return self.console_logger
+
+    def info_log(self,msg):
+        self.file_logger.info(msg)
+        self.console_logger.info(msg)
+
+    def warning_log(self,msg):
+        self.file_logger.warning(msg)
+        self.console_logger.warning(msg)
+
+    def error_log(self,msg):
+        self.file_logger.error(msg)
+        self.console_logger.error(msg)
+        
+    def critical_log(self,msg):
+        self.file_logger.critical(msg)
+        self.console_logger.critical(msg)
